@@ -1,0 +1,4 @@
+config.json
+.pytest_cache
+.env
+.idea
