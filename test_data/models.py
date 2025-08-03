@@ -6,14 +6,6 @@ class User(BaseModel):
     type: str
     message: str
 
-class Pet(BaseModel):
-    id: int
-    category: Category
-    name: Optional[str]
-    photoUrls: List[str]
-    tags: List[Tag]
-    status: str
-
 class Category(BaseModel):
     id: int
     name: str
@@ -21,6 +13,14 @@ class Category(BaseModel):
 class Tag(BaseModel):
     id: int
     name: str
+
+class Pet(BaseModel):
+    id: int
+    category: Category
+    name: Optional[str]
+    photoUrls: List[str]
+    tags: List[Tag]
+    status: str
 
 
 # {
